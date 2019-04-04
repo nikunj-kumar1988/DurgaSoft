@@ -1,0 +1,21 @@
+public class LoginPage;
+{
+     WebDriver driver;
+     
+     LoginPage(WebDriver driver)
+     {
+       this.driver = driver;
+       PageFactory.initElements(driver,this);
+     }
+     
+     @FindBy(name="userName")
+     WebElement username;
+   
+     @FindBy(name="password")
+     WebElement password;
+     
+     @FindBy(name="password")
+     WebElement login;
+     
+
+}
