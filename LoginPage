@@ -1,6 +1,6 @@
 public class LoginPage;
 {
-     WebDriver driver;
+     private WebDriver driver;
      
      LoginPage(WebDriver driver)
      {
@@ -9,13 +9,13 @@ public class LoginPage;
      }
      
      @FindBy(name="userName")
-     WebElement username;
+     private WebElement username;
    
      @FindBy(name="password")
-     WebElement password;
+     private WebElement password;
      
      @FindBy(name="login")
-     WebElement login;
+     private WebElement login;
      
      public void setUsername(String userid)
      {
@@ -30,6 +30,11 @@ public class LoginPage;
      public void clickLogin()
      {
           login.click();
+     }
+     
+     public void isHomePageDisplayed()
+     {
+          
      }
 
 }
